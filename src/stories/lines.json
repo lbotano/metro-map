@@ -1,0 +1,62 @@
+[
+  {
+    "id": 0,
+    "name": "Línea A",
+    "color": "#aaaff",
+    "stations": [
+      {
+        "id": 0,
+        "name": "Plaza de Mayo",
+        "transfers": [],
+        "mapPos": {
+          "x": 10,
+          "y": 10
+        },
+        "nextStation": 1
+      },
+      {
+        "id": 1,
+        "name": "Congreso",
+        "transfers": [],
+        "mapPos": {
+          "x": 110,
+          "y": 10
+        },
+        "prevStation": 0,
+        "nextStation": 2
+      },
+      {
+        "id": 2,
+        "name": "Once",
+        "transfers": [],
+        "mapPos": {
+          "x": 210,
+          "y": 10
+        },
+        "prevStation": 1,
+        "nextStation": 3
+      },
+      {
+        "id": 3,
+        "name": "Caballito",
+        "transfers": [],
+        "mapPos": {
+          "x": 310,
+          "y": 10
+        },
+        "prevStation": 2,
+        "nextStation": 4
+      },
+      {
+        "id": 4,
+        "name": "Flores",
+        "transfers": [],
+        "mapPos": {
+          "x": 310,
+          "y": 150
+        },
+        "prevStation": 3
+      }
+    ]
+  }
+]
