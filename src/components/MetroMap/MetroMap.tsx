@@ -16,11 +16,11 @@ export const MetroMap = (props: MetroMapProps) => {
     if (canvas) {
       const ctx = canvas.getContext('2d');
       if (ctx) {
-        for (let line of props.lines) {
+        for (const line of props.lines) {
           // Draw lines
           ctx.strokeStyle = line.color;
           ctx.lineWidth = 10;
-          for (let station of line.stations) {
+          for (const station of line.stations) {
             ctx.lineTo(station.mapPos.x, station.mapPos.y);
             ctx.stroke();
             ctx.beginPath();
@@ -30,7 +30,7 @@ export const MetroMap = (props: MetroMapProps) => {
           // Draw stations
           ctx.strokeStyle = '#000';
           ctx.fillStyle = '#ffffff';
-          for (let station of line.stations) {
+          for (const station of line.stations) {
             ctx.beginPath();
             ctx.arc(station.mapPos.x, station.mapPos.y, 10, 0, 2 * Math.PI);
             ctx.stroke();
@@ -51,5 +51,5 @@ export const MetroMap = (props: MetroMapProps) => {
         Your browser doesn't support HTML5
       </canvas>
     </div>
-  )
-}
+  );
+};
